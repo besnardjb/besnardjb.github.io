@@ -1,0 +1,78 @@
+html {
+    height: auto !important;
+    padding-bottom: 700px !important;
+}
+
+body {
+    color: black;
+    background-color: rgb(250,244,238);
+}
+
+a {
+    color: brown;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+
+.links{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+h1.tab {
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+.spacey {
+    margin: 10px 10px 10px 10px;
+}
+
+
+.c1 {
+    background-color:  lightblue;
+    border: solid 1px;
+    border-color: black;
+    color: black;
+}
+
+.c2 {
+    background-color: lightblue;
+    border: solid 1px;
+    color: white;
+}
+
+.poshead{
+    color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.fullw {
+    width: 100%;
+    clear: left;
+    text-align: left;
+    font-size: 1em;
+}
+
+.halfw {
+    width: 50%;
+    float: left;
+    padding-top: 5px;
+}
+
+.floatl {
+    float: left;
+}
+
+.draw {
+    text-align: center;
+}
