@@ -31,7 +31,7 @@ onmessage = function(msg) {
 
     var color_lut = [];
 
-    var max_iter = 32.0
+    var max_iter = 1.0
 
     var sx = 3.0
     var sy = 2.0
@@ -44,7 +44,9 @@ onmessage = function(msg) {
         color_lut = [];
 
         for (var i = (max_iter-1) ; 0 <= i ; i--){
-            color_lut.push([(255*(i/parseFloat(max_iter)))%255, (255*(i*2/parseFloat(max_iter)))%255, (255*(i*3/parseFloat(max_iter)))%255]);
+            color_lut.push([255-(255*(i/parseFloat(max_iter)))%255,
+                            255-(255*(i*2/parseFloat(max_iter)))%255,
+                            255-(255*(i*3/parseFloat(max_iter)))%255]);
         }
 
         for (var x = 0; x < size_x; x++) {
