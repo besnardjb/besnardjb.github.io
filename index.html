@@ -154,6 +154,8 @@
         
     <h2>Virtualization and Containers</h2>
 
+    <a href="https://github.com/cea-hpc/pcocc">pcocc</a><br>
+
     <ul>
         <li><b>Virtualization:</b>
             <ul>
@@ -165,6 +167,9 @@
             <ul>
                 <li>Integrated container support in an HPC orchestrator (POD and rootless)</li>
                 <li>Developed custom OS images for fast booting VMs (for use as PODs)</li>
+                <li>Implemented import and export of OCI container images</li>
+                <li>Worked on MPI support inside containers</li>
+                <li>Generation of lightweight Pod images with linuxkit</li>
             </ul>
         </li>
     </ul>
@@ -217,7 +222,7 @@
                 <li>My favorite literature author is Saint Exupery;</li>
                 <li>I still have a driving license (Car);</li>
                 <li>My favorite color is Cyan;</li>
-                <li>I have a marvelous wife and two (small) dogs.</li>
+                <li>I have a marvelous wife, a beautiful daughter and two (small) dogs.</li>
             </ul>
         </ul>
     </div>    
@@ -262,6 +267,7 @@
                 <li>On compiler side, I worked on privatization and developed a compiler pass in gcc to support edge-cases in the privatization of variables (initialization chains), a process which enabled reliable compile-time transformation to run code in user-level threads;</li>
                 <li>I've implemented the full RDMA support inside the MPC runtime. It is based on a modular structure integrated into the multi-rail engine. It also includes, emulated calls on top of active messages and shared-memory (and same node) optimizations;</li>
                 <li>I've worked on collective operation algorithms in shared-memory context to be able to extract parallelism while maximizing local processing for collective operations. This work was extended to node-local collectives through shared-memory segments;</li>
+                <li>I've integrated container support in the pcocc orchestrator both inside pods (using a Go agent) and natively using rootless containers. To do so I relied on the OCI image format both exporting and importing in native Python.</li>
             </ul>
 
             This work was mainly targetted at updating the support for the MPI standard in the MPC MPI runtime.
@@ -281,7 +287,9 @@
     <h1 class="tab c1" id="pub">Publications</h1>
 
     <ul>
-        <li>Julien Adam, Jean-Baptiste Besnard, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger: Transparent High-Speed Network Checkpoint/Restart in MPI. EuroMPI 2018 (TBA)</li>
+        <li>Julien Adam, Maxime Kermarquer, Jean-Baptiste Besnard, Leonardo Bautista-Gomez, Marc Pérache, Patrick Carribault, Julien Jaeger, Allen D. Malony, Sameer Shende: Checkpoint/restart approaches for a thread-based MPI runtime. Parallel Computing 85: 204-219 (2019)</li>
+        <li>Julien Adam, Jean-Baptiste Besnard, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger: Transparent High-Speed Network Checkpoint/Restart in MPI. EuroMPI 2018</li>
+        <li>Besnard, J. B., Malony, A. D., Shende, S., Pérache, M., Carribault, P., & Jaeger, J. (2017, September). Unifying the Analysis of Performance Event Streams at the Consumer Interface Level. In International Workshop on Parallel Tools for High Performance Computing (pp. 57-71). Springer, Cham.</li>
         <li>Jean-Baptiste Besnard, Allen D. Malony, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger: Towards a Better Expressiveness of the Speedup Metric in MPI Context. ICPP Workshops 2017: 251-260</li>
         <li>Antoine Capra, Patrick Carribault, Jean-Baptiste Besnard, Allen D. Malony, Marc Pérache, Julien Jaeger: User Co-scheduling for MPI+OpenMP Applications Using OpenMP Semantics. IWOMP 2017: 203-216</li>
         <li>Jean-Baptiste Besnard, Julien Adam, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger:
