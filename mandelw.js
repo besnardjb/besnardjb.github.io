@@ -31,7 +31,7 @@ onmessage = function(msg) {
 
     var color_lut = [];
 
-    var max_iter = 1.0
+    var max_iter = 32.0
 
     var sx = 3.0
     var sy = 2.0
