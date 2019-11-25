@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jean-Baptiste BESNARD - Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125413789-1"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125413789-1');
+    </script>
+</head>
+
+<body id="projects">
+
+<nav>
+<section>
+    <span class="home">
+        <a href="/">Home</a>
+    </span>
+    <span class="links">
+        <!-- <a href="/blog/">Blog</a> 
+        <a href="/news/">News</a>-->
+        <a href="/projects/">Software Projects</a>
+        <a href="/publications/">Publications</a>
+        <a href="/resume/">Resume</a>
+        <a href="/contact/">Contact</a>
+    </span>
+</section>
+</nav>
+
+<main>
+<h1>Software Projects</h1>
+    
+<h2>Multi−Processor Computing Runtime</h2>
+
+<a href="http://mpc.hpcframework.com">MPC MPI Runtime website</a>
+
+<ul>
+    <li><b>Message Passing Interface (MPI):</b>
+        <ul>
+            <li>Integrated MPI-IO in the MPC MPI runtime</li>
+            <li>Implemented Extended Generic Request support in MPC</li>
+            <li>Re-implemented the datatype engine in MPC</li>
+            <li>Implemented the full MPI 3.1 RDMA interface in MPC</li>
+            <li>Shared-memory/Inter-Node collective optimization in MPC</li>
+            <li>MPI-T profiling interface in MPC</li>
+        </ul>
+    </li>
+    <li><b>Network programming:</b>
+        <ul>
+            <li>Integrated IB RDMA support (one-sided) in MPC</li>
+            <li>Implemented Active-message RMDA in MPC</li>
+            <li>Implemented the multi-rail support in the MPC runtime</li>
+        </ul>
+    </li>
+    <li><b>Compiler:</b>
+        <ul>
+            <li>Privatization plugin for the MPC runtime (GCC)</li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Performance and Debugging Tools</h2>
+
+<a href="http://malp.hpcframework.com">MALP MPI Profiler website</a><br>
+<a href="https://github.com/besnardjb/LDPL">LDPL repository</a><br>
+<a href="https://github.com/besnardjb/ngdbmi">ngdbmi repository</a><br>
+
+<ul>
+    <li><b>Parallel profiling:</b>
+        <ul>
+            <li>Profiling of the MPI interface</li>
+            <li>Storage and analysis of TB of data</li>
+            <li>Implementation of an in-situ analysis tool (MPMD)</li>
+        </ul>
+    </li>
+    <li><b>Web programming:</b>
+        <ul>
+            <li>Node.JS back-end for MALP in charge of analytics</li>
+            <li>Developed own server-side templating language for modular analysis</li>
+            <li>Client-side analysis including D3.js and interactive graphs</li>
+        </ul>
+    </li>
+    <li><b>Debugging and validation:</b>
+        <ul>
+            <li>Implemented a locking validation system for pThread</li>
+            <li>Implemented a Node.js GDB wrapper (over the Machine interface MI)</li>
+        </ul>
+    </li>
+</ul>
+
+    
+<h2>Virtualization and Containers</h2>
+
+<a href="https://github.com/cea-hpc/pcocc">pcocc</a><br>
+
+<ul>
+    <li><b>Virtualization:</b>
+        <ul>
+            <li>Implemented a virtual machine agent in Go</li>
+            <li>Deployed a control TBON over GRPC</li>
+        </ul>
+    </li>
+    <li><b>Containers:</b>
+        <ul>
+            <li>Integrated container support in an HPC orchestrator (POD and rootless)</li>
+            <li>Developed custom OS images for fast booting VMs (for use as PODs)</li>
+            <li>Implemented import and export of OCI container images</li>
+            <li>Worked on MPI support inside containers</li>
+            <li>Generation of lightweight Pod images with linuxkit</li>
+        </ul>
+    </li>
+</ul>
+</main>
+
+<footer>
+<section>
+<p>&copy; 2019 Jean-Baptiste Besnard</p>
+<p>
+    <a href="https://www.linkedin.com/in/jbbesnard">Linked In</a>
+    <a href="https://github.com/besnardjb/">GitHub</a>
+</p>
+</section>
+</footer>
+
+</body>
+</html>

@@ -1,348 +1,104 @@
-
+<!DOCTYPE html>
 <html>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Jean-Baptiste BESNARD, Computer Scientist.</title>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125413789-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-125413789-1');
-        </script>
-    </head>
-    
-    <body>
-    <canvas id="md" width=0 height=0></canvas>
-    <div class="header">
-        <h1>Jean-Baptiste BESNARD</h1>
-    </div>
-    <hr>
-    <div class="links">
-          <a href="./cv.pdf">Resume in PDF</a>
-        | <a href="#aboutme">About Me</a>
-        | <a href="#edu">Positions and Education</a>
-        | <a href="#soft">Software Projects</a>
-        | <a href="#skills">Subjects of Predilection</a>
-        | <a href="#pub">Publications</a>
-        | <a href="#serv">Services</a>
-    </div>
-    <hr>
-
-    <div class="fullw">
-    <div class="halfw">
-    <h1 class="tab c1" id="edu">Positions/Education</h1>
-    
-    <h2>Manager and Technical Leader</h2>
-    <div class="poshead">ParaTools SAS, Sept. 2016 - Present</div>
-    
-    <h2>HPC Consultant</h2>
-    <div class="poshead">ParaTools SAS, Aug. 2014 - Sept. 2016</div>
-    
-    <h2>Research Engineer</h2>
-    <div class="poshead">Exascale Computing Research (ECR), Oct. 2013 - Aug. 2014</div>
-    
-    <h2>Teaching Assistant</h2>
-    <div class="poshead">ISTY, University of Versailles Saint-Quentin, Oct. 2013 - Jul. 2014</div>
-    
-    Engineering school, second year.
-    <ul>
-        <li>Processor architecture</li>
-    </ul>
-    
-    <h2>Ph. D Thesis</h2>
-    <div class="poshead">CEA, Oct. 2010 - Sept. 2013</div>
-    
-    <h2>Teaching Assistant</h2>
-    <div class="poshead">University of Versailles Saint-Quentin, Oct. 2012 - Jul. 2013</div>
-    
-    Master 2: High-Performance Computing and Simulation (MIHPS).
-    <ul>
-        <li>Advanced compilation: addition of a profiling pass in GCC (plugin)</li>
-    </ul>
-    
-    <h2>Teaching Assistant</h2>
-    <div class="poshead">University of Versailles Saint-Quentin, Oct. 2011 - Jul. 2012</div>
-    
-    Master 1: High-Performance Computing and Simulation (MIHPS)
-    <ul>
-        <li>C programming and UNIX environment</li>
-        <li>Parallel optimization techniques (MPI+OpenMP)</li>
-    </ul>
-    
-    <h2>Work-Study Program</h2>
-    <div class="poshead">CEA, Oct. 2009 - Sept. 2010</div>
-    
-    <h2>Engineer in Training</h2>
-    <div class="poshead">Achtech Innovation, Mar. 2009 - Jun. 2009</div>
-    
-    <h2>Engineering School</h2>
-    <div class="poshead">ISEN Brest, Sept. 2007 - Jun. 2010</div>
-    
-    <h2>Preparatory Mathematics Classes</h2>
-    <div class="poshead">ISEN Brest, Sept. 2005 - Jun. 2007</div>
-    
-    
-    </div>
-    
-    </div>
-    
-    <div class="halfw">
-    <h1 class="tab c1" id="soft">Software Projects</h1>
-    
-    <h2>Multi−Processor Computing Runtime</h2>
-    
-    <a href="http://mpc.hpcframework.com">MPC MPI Runtime website</a>
-    
-    <ul>
-        <li><b>Message Passing Interface (MPI):</b>
-            <ul>
-                <li>Integrated MPI-IO in the MPC MPI runtime</li>
-                <li>Implemented Extended Generic Request support in MPC</li>
-                <li>Re-implemented the datatype engine in MPC</li>
-                <li>Implemented the full MPI 3.1 RDMA interface in MPC</li>
-                <li>Shared-memory/Inter-Node collective optimization in MPC</li>
-                <li>MPI-T profiling interface in MPC</li>
-            </ul>
-        </li>
-        <li><b>Network programming:</b>
-            <ul>
-                <li>Integrated IB RDMA support (one-sided) in MPC</li>
-                <li>Implemented Active-message RMDA in MPC</li>
-                <li>Implemented the multi-rail support in the MPC runtime</li>
-            </ul>
-        </li>
-        <li><b>Compiler:</b>
-            <ul>
-                <li>Privatization plugin for the MPC runtime (GCC)</li>
-            </ul>
-        </li>
-    </ul>
-    
-    <h2>Performance and Debugging Tools</h2>
-    
-    <a href="http://malp.hpcframework.com">MALP MPI Profiler website</a><br>
-    <a href="https://github.com/besnardjb/LDPL">LDPL repository</a><br>
-    <a href="https://github.com/besnardjb/ngdbmi">ngdbmi repository</a><br>
-    
-    <ul>
-        <li><b>Parallel profiling:</b>
-            <ul>
-                <li>Profiling of the MPI interface</li>
-                <li>Storage and analysis of TB of data</li>
-                <li>Implementation of an in-situ analysis tool (MPMD)</li>
-            </ul>
-        </li>
-        <li><b>Web programming:</b>
-            <ul>
-                <li>Node.JS back-end for MALP in charge of analytics</li>
-                <li>Developed own server-side templating language for modular analysis</li>
-                <li>Client-side analysis including D3.js and interactive graphs</li>
-            </ul>
-        </li>
-        <li><b>Debugging and validation:</b>
-            <ul>
-                <li>Implemented a locking validation system for pThread</li>
-                <li>Implemented a Node.js GDB wrapper (over the Machine interface MI)</li>
-            </ul>
-        </li>
-    </ul>
-    
-        
-    <h2>Virtualization and Containers</h2>
-
-    <a href="https://github.com/cea-hpc/pcocc">pcocc</a><br>
-
-    <ul>
-        <li><b>Virtualization:</b>
-            <ul>
-                <li>Implemented a virtual machine agent in Go</li>
-                <li>Deployed a control TBON over GRPC</li>
-            </ul>
-        </li>
-        <li><b>Containers:</b>
-            <ul>
-                <li>Integrated container support in an HPC orchestrator (POD and rootless)</li>
-                <li>Developed custom OS images for fast booting VMs (for use as PODs)</li>
-                <li>Implemented import and export of OCI container images</li>
-                <li>Worked on MPI support inside containers</li>
-                <li>Generation of lightweight Pod images with linuxkit</li>
-            </ul>
-        </li>
-    </ul>
-    </div>
-    
-    <div class="fullw">
-        <h1 class="tab c1" id="skills">Subjects of Predilection and Skills</h1>
-        <ul>
-            <li><b>Main technical skills:</b></li>
-            <ul>
-                <li>System programming in C;</li>
-                <li>Shared-memory parallelism in C (Pthread, OpenMP);</li>
-                <li>Parallel Network programming (Infiniband);</li>
-                <li>RDMA network programming (Infiniband);</li>
-                <li>Message Passing Interface (MPI) both as runtime developer and user;</li>
-                <li>General Linux administration (Slurm, OpenVPN, accounts, NFS, Samba, DNS, nginx,...);</li>
-                <li>Go Programming with GRPC networking;</li>
-                <li>Scripting in Python, Ba(sh) and JavaScript (including Node.JS).</li>
-            </ul>
-            <li><b>Main managerial skills:</b></li>
-            <ul>
-                <li>Lead a team of HPC Consultants from a technical point of view;</li>
-                <li>Write research proposals for public funding applications;</li>
-                <li>Lead a research project from a technical point of view;</li>
-                <li>Write and propose timed technical solutions to SoWs;</li>
-                <li>Provide technical and practical support to research and development efforts:</li>
-                <ul>
-                    <li>Provide and define R&D ideas worth exploring;</li>
-                    <li>Write papers at conferences.</li>
-                </ul>
-                <li>Represent a company with its customer and prospects;</li>
-                <li>Lead outreach activities for the company.</li>
-            </ul>
-            <li><b>Language and inter-personal skills:</b></li>
-            <ul>
-                <li>French (native tongue);</li>
-                <li>English (proficient) practiced on a daily basis;</li>
-                <li>Used to presenting in public/leading meetings;</li>
-                <li>I can (and I'm used to) travel as part of my work;</li>
-                <li>I appreciate to work in an international environment and to meet new people.</li>
-            </ul>
-            <li><b>Main goals and considerations:</b></li>
-            <ul>
-                <li>If machines are to take over the world they'll surely be parallel. It this latter case it is unlikely that they are programmed in Bash but it is not impossible.</li>
-                <li>No mind or theory can fully capture the world. Some people are sure to be right. Some people are wrong.</li>
-                <li>I adhere to the constructivist epistemology and believe in systems predating the rise of any model (member of <a href="http://www.mcxapc.org/">http://www.mcxapc.org/</a>).</li>
-            </ul>
-            <li><b>Personal/Interests:</b></li>
-            <ul>
-                <li>My favorite literature author is Saint Exupery;</li>
-                <li>I still have a driving license (Car);</li>
-                <li>My favorite color is Cyan;</li>
-                <li>I have a marvelous wife, a beautiful daughter and two (small) dogs.</li>
-            </ul>
-        </ul>
-    </div>    
-
-    <div class="fullw">
-        <h1 class="tab c1" id="aboutme">About Me</h1>
-        <div class="floatl">
-            <img class="spacey" src="pic.jpg" alt="Smiley face" height="180px">
-        </div>
-        <div>
-            Hello, my name is Jean-Baptiste Besnard and I'm a computer scientist. I work mainly on parallel systems with a focus on runtime and profiling aspects. 
-            
-            <h2>At the Beginning...</h2>
-            
-            <p>My interest in computers dates back to my childhood, I've started on an IBM PC with an 8088 and Windows 3.1. I was among the ones leaving the "Turbo button" always on -- why not doing so? I started programming on Quick Basic around the age of 10, there I discovered my taste for blue backgrounds and learned that the PC speaker was able to generate unbearable noises. Followingly, I did some C++ with Borland C++ IDE. I then pursued under Windows and developed in Visual Basic some tiny projects, a vocal assistant leveraging the Microsoft Assistant API (mine had the Merlin skin). Then I did some dumb projects such as a Mail Bomber (it valued me a personal call from my ISP, I promised not to do it again). After, I switched to Linux around 15 years old, started to learn C, Bash, System administration (by first breaking several systems!). My first Distro was a Mandrake as it was a French one and that it was integrated enough to be usable "out of the box". At that times I got interested in parallelism and deployed a small OpenMosix cluster.</p>
-            
-            <h2>Studies and Engineering School</h2>
-            
-            <p>I pursued scientific studies and implemented a few projects such as a code breaker for mono-alphabetical substitution using both statistical analysis and word patterns, it was done in PHP MySQL (do not ask why). This project included steganography to hide text in images. Meanwhile, I practiced Casio Basic intensively to take advantage of my Graph 100. I then entered mathematics preparatory school (CPGE PCSI) for two years before starting my engineering school at <a href="http://isen-brest.fr/">ISEN Brest</a>. I made a real-time hand and face tracking project in C++ based on the OpenCV library and parallelized in OpenMP. It relied on skin color segmentation and apriori knowledge of the body shape. I also made a Bayesian classifier able to sort objects captured on a webcam given morphological and color attributes. I spent four months developing a <a href="https://en.wikipedia.org/wiki/DVB-T">DVB-T</a> parser in C to debug video playback problems, during this same training I also had a small commit in VLC and was sensitized to Open-Source development. In 2010, I obtained an engineering degree Networking and Telecommunication major with a background in electronics.</p>
-            
-            <h2>Ph. D Thesis on Performance Tools</h2>
-            
-            <p>The same year I started working at CEA in a work-study program I developed performance monitoring tools for HPC clusters. At this time I discovered the <a href="http://malp.hpcframework.com/">Multi-Processor Computing (MPC)</a> runtime and got familiar with profiling concepts and tools. I first wrote a tracing tool using OTF1 and observed the limitations of the format relatively to threads. I then developed my own trace format, the <a href="https://www.vi-hps.org/upload/material/tw09/vi-hps-tw09-MPC_Trace_Library.pdf">MPC Trace Library</a>. It used a binary storage and hierarchical auto-numbering of ranks (OTF1 had an ASCII state machine) through a breadth-first search. Post-Mortem traces were processed in parallel using a callback-oriented trace reader and the final output was PDFs describing the parallel execution.</p>
-            
-            <p>My thesis began with the development of new analysis aimed at massively parallel applications. By relying on our trace format and parallel analyzer, we generated profiling reports (in PDF) for several production-grade applications. Nonetheless, when the number of files was approaching the number of nodes (4370 on Tera 100), we observed a severe performance penalty, encouraging us to rethink our instrumentation-analysis coupling. Indeed, file-system being a shared resource subject to contention, it is crucial to preserve it. Our bet was then not to use the file-system at all, preserving in the meantime the parallelism between instrumentation and analysis. Moreover, we were then able to dimension the analysis such as it maximizes the bisection bandwidth. Thanks to this mechanism, we instrumented applications at the scale of ten thousands of cores, manipulating data volumes in hundreds of Tera-Bytes. It shall be noted that this approach led to higher cumulative bandwidth than the file-system (98.5 GB/sec for 2560 analysis process). By dedicating cores to the on-line processing of performance events, we avoided the storage of temporary trace data, focusing only on the final result. These features were regrouped in the <a href="http://malp.hpcframework.com/">MALP tool-suite</a>.
-            </p>
-    
-            <h2>PostDoc as Research Engineer</h2>
-    
-            <p>After my thesis, I joined the Exascale Computing research laboratory to pursue the development of my tool.
-            My work consisted in the industrialization of MALP which had to move from the proof of concept to an integrated tool. We had to partially rewrite some features while integrating others. We also developed a new web interface in place of previous LaTex (or PDF) reports. The web approach allowed us to propose richer interactions with measurements (now stored in JSON) with for example 3D visualizations (WebGL with three.js). Moreover, in order to speed up analysis module development, MALP relied on its own template engine, gathering the HTML layout and both client and server side Javascript in the same source file (using Node.JS). Eventually, laboratory partnerships allowed us to test MALP over representative applications from aeronautics and chemistry in order to get a better understanding of user’s need, confirming some advantages of MALP over other tools.</p>
-
-            <h2>HPC Consultant</h2>
-    
-            <p>I've been the first employee of the ParaTools SAS office in France, I've been in charge of fulfilling statements of work close to research subjects.
-
-            Below is a list of subjects I've dealt with, enriched with a short description: 
-            <ul>
-                <li>I started with developments in the MPC MPI runtime and integrated MPI-IO support by porting the ROMIO source code;</li>
-                <li>I reworked the datatype engine in the MPI runtime to provide support at the 3.1 level. In particular, I've extracted datatypes' footprints to factorize datatypes with ref-counting, indifferently from their generating function;</li>
-                <li>I then worked on the network part implementing configurable multi-rail in the runtime, configured through an XML file;</li>
-                <li>On compiler side, I worked on privatization and developed a compiler pass in gcc to support edge-cases in the privatization of variables (initialization chains), a process which enabled reliable compile-time transformation to run code in user-level threads;</li>
-                <li>I've implemented the full RDMA support inside the MPC runtime. It is based on a modular structure integrated into the multi-rail engine. It also includes, emulated calls on top of active messages and shared-memory (and same node) optimizations;</li>
-                <li>I've worked on collective operation algorithms in shared-memory context to be able to extract parallelism while maximizing local processing for collective operations. This work was extended to node-local collectives through shared-memory segments;</li>
-                <li>I've integrated container support in the pcocc orchestrator both inside pods (using a Go agent) and natively using rootless containers. To do so I relied on the OCI image format both exporting and importing in native Python.</li>
-            </ul>
-
-            This work was mainly targetted at updating the support for the MPI standard in the MPC MPI runtime.
-
-            Due to the small size of the company my responsibilities also included general operations, communication and some administrative tasks. The company hired two new collaborators and I've then been promoted to a position including a management role.
-            </p>
-        
-            <h2>Manager and Technical Leader (Current)</h2>
-    
-            <p>As the company grown with new hiring it was necessary to structure it slightly more hierarchically. My responsibilities then included the management and timely delivery of work for a small team. Meanwhile, administrative work and the writing, reporting, and conduct of research project also became one of my attributions. I've also pursued developments as a consultant. In particular, I've participated in the development of an orchestrator for virtual machines by developing a virtualization agent (in python, Go and GRPC). Followingly, I've implemented OCI container support in this hypervisor by deploying support for execution in both Pods and Rootless environments -- leveraging existing tools and runtimes. ParaTools also founded (with four other partners) a working group in the MPI Forum (home of the MPI standard) dealing with hardware topology. I've been in charge of participating to this group led by INRIA Bordeaux, and which goal is to produce valuable hardware abstractions to target next HPC architectures.
-            </p>
-    
-        </div>
-    </div>
-
-    <div class="fullw">
-    <h1 class="tab c1" id="pub">Publications</h1>
-
-    <ul>
-        <li>Julien Adam, Maxime Kermarquer, Jean-Baptiste Besnard, Leonardo Bautista-Gomez, Marc Pérache, Patrick Carribault, Julien Jaeger, Allen D. Malony, Sameer Shende: Checkpoint/restart approaches for a thread-based MPI runtime. Parallel Computing 85: 204-219 (2019)</li>
-        <li>Julien Adam, Jean-Baptiste Besnard, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger: Transparent High-Speed Network Checkpoint/Restart in MPI. EuroMPI 2018</li>
-        <li>Besnard, J. B., Malony, A. D., Shende, S., Pérache, M., Carribault, P., & Jaeger, J. (2017, September). Unifying the Analysis of Performance Event Streams at the Consumer Interface Level. In International Workshop on Parallel Tools for High Performance Computing (pp. 57-71). Springer, Cham.</li>
-        <li>Jean-Baptiste Besnard, Allen D. Malony, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger: Towards a Better Expressiveness of the Speedup Metric in MPI Context. ICPP Workshops 2017: 251-260</li>
-        <li>Antoine Capra, Patrick Carribault, Jean-Baptiste Besnard, Allen D. Malony, Marc Pérache, Julien Jaeger: User Co-scheduling for MPI+OpenMP Applications Using OpenMP Semantics. IWOMP 2017: 203-216</li>
-        <li>Jean-Baptiste Besnard, Julien Adam, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger:
-        Introducing Task-Containers as an Alternative to Runtime-Stacking. EuroMPI 2016: 51-63</li>
-        <li>Besnard JB., Malony A.D., Shende S., Pérache M., Jaeger J. (2016) Gleaming the Cube: Online Performance Analysis and Visualization Using MALP. In: Knüpfer A., Hilbrich T., Niethammer C., Gracia J., Nagel W., Resch M. (eds) Tools for High Performance Computing 2015. Springer, Cham</li>
-        <li>Jean-Baptiste Besnard, Allen D. Malony, Sameer Shende, Marc Pérache, Patrick Carribault, Julien Jaeger: An MPI Halo-Cell Implementation for Zero-Copy Abstraction. EuroMPI 2015: 3:1-3:9</li>
-        <li>Jean-Baptiste Besnard: Profiling and debugging by efficient tracing of hybrid multi-threaded HPC applications. (Profilage et débogage par prise de traces efficaces d'applications hybrides multi-threadées HPC). Versailles Saint-Quentin-en-Yvelines University, France 2014</li>
-        <li>Jean-Baptiste Besnard, Marc Pérache, William Jalby:
-        Event Streaming for Online Performance Measurements Reduction. ICPP 2013: 985-994</li>
-    </ul>
-
-    </div>
-
-    <div class="fullw">
-        <h1 class="tab c1" id="serv">Services</h1>
-        
-        <ul>
-            <li><i>Program Commitees:</i></li>
-            <ul>
-                <li>Workshop on Monitoring and Analysis for High Performance Computing Systems Plus Applications 2016
-                    (HPCMaspa 2016);</li>
-                <li>The International Conference for High Performance Computing, Networking, Storage, and Analysis, SC 2016, <i>Performance Measurement, Modelling, and Tools</i>;</li>
-               <li>The International Conference for High Performance Computing, Networking, Storage, and Analysis, SC 2017, <i>Performance Measurement, Modelling, and Tools</i>;</li>
-                <li>6th Workshop on Extreme-Scale Programming Tools;</li>
-                <li>Workshop on Monitoring and Analysis for High Performance Computing Systems Plus Applications 2017
-                        (HPCMaspa 2017);</li>
-                <li>18th IEEE/ACM International Conference on Cluster, Cloud, and Grid Computing (CCGrid 2018) <i>Performance Modeling and Evalution track</i>;</li>
-                <li>International Conference on Parallel Processing (ICPP) 2018 <i>Performance Track</i>;</li>
-                <li>7th Workshop on Extreme-Scale Programming Tools.</li>
-                <li>19th IEEE/ACM International Conference on Cluster, Cloud, and Grid Computing (CCGrid 2019) <i>Performance Modeling and Evalution track</i>;</li>
-                <li>Workshop on Monitoring and Analysis for High Performance Computing Systems Plus Applications 2019
-                        (HPCMaspa 2019);</li>
-            </ul>
-            <li><i>Program Commitee (Journals):</i></li>
-            <ul>
-                <li>Future Generation Computer Systems 2017</li>
-            </ul>
-            <li><i>Poster Commitees:</i></li>
-            <ul>
-                <li>EuroMPI/USA 2017;</li>
-                <li>EuroMPI 2018.</li>
-            </ul>
-    </div>
-
-    </body>
-
-    <script src="mandel.js"></script>
+<head>
+    <title>Jean-Baptiste BESNARD - Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125413789-1"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
-    var m = null
-    var mandel_size = {}
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    function set_mandel()
+    gtag('config', 'UA-125413789-1');
+    </script>
+</head>
+
+<body id="_index">
+
+<nav>
+<section>
+    <span class="home">
+        <a href="/">Home</a>
+    </span>
+    <span class="links">
+        <!-- <a href="/blog/">Blog</a> 
+        <a href="/news/">News</a>-->
+        <a href="/projects/">Software Projects</a>
+        <a href="/publications/">Publications</a>
+        <a href="/resume/">Resume</a>
+        <a href="/contact/">Contact</a>
+    </span>
+</section>
+</nav>
+
+<main>
+<h1>About Me</h1>
+<div class="floatl">
+    <img class="spacey" src="pic.jpg" alt="Smiley face" height="180px">
+</div>
+<div>
+    Hello, my name is Jean-Baptiste Besnard and I'm a computer scientist. I work mainly on parallel systems with a focus on runtime and profiling aspects. 
+    
+    <h2>At the Beginning...</h2>
+    
+    <p>My interest in computers dates back to my childhood, I've started on an IBM PC with an 8088 and Windows 3.1. I was among the ones leaving the "Turbo button" always on -- why not doing so? I started programming on Quick Basic around the age of 10, there I discovered my taste for blue backgrounds and learned that the PC speaker was able to generate unbearable noises. Followingly, I did some C++ with Borland C++ IDE. I then pursued under Windows and developed in Visual Basic some tiny projects, a vocal assistant leveraging the Microsoft Assistant API (mine had the Merlin skin). Then I did some dumb projects such as a Mail Bomber (it valued me a personal call from my ISP, I promised not to do it again). After, I switched to Linux around 15 years old, started to learn C, Bash, System administration (by first breaking several systems!). My first Distro was a Mandrake as it was a French one and that it was integrated enough to be usable "out of the box". At that times I got interested in parallelism and deployed a small OpenMosix cluster.</p>
+    
+    <h2>Studies and Engineering School</h2>
+    
+    <p>I pursued scientific studies and implemented a few projects such as a code breaker for mono-alphabetical substitution using both statistical analysis and word patterns, it was done in PHP MySQL (do not ask why). This project included steganography to hide text in images. Meanwhile, I practiced Casio Basic intensively to take advantage of my Graph 100. I then entered mathematics preparatory school (CPGE PCSI) for two years before starting my engineering school at <a href="http://isen-brest.fr/">ISEN Brest</a>. I made a real-time hand and face tracking project in C++ based on the OpenCV library and parallelized in OpenMP. It relied on skin color segmentation and apriori knowledge of the body shape. I also made a Bayesian classifier able to sort objects captured on a webcam given morphological and color attributes. I spent four months developing a <a href="https://en.wikipedia.org/wiki/DVB-T">DVB-T</a> parser in C to debug video playback problems, during this same training I also had a small commit in VLC and was sensitized to Open-Source development. In 2010, I obtained an engineering degree Networking and Telecommunication major with a background in electronics.</p>
+    
+    <h2>Ph. D Thesis on Performance Tools</h2>
+    
+    <p>The same year I started working at CEA in a work-study program I developed performance monitoring tools for HPC clusters. At this time I discovered the <a href="http://malp.hpcframework.com/">Multi-Processor Computing (MPC)</a> runtime and got familiar with profiling concepts and tools. I first wrote a tracing tool using OTF1 and observed the limitations of the format relatively to threads. I then developed my own trace format, the <a href="https://www.vi-hps.org/upload/material/tw09/vi-hps-tw09-MPC_Trace_Library.pdf">MPC Trace Library</a>. It used a binary storage and hierarchical auto-numbering of ranks (OTF1 had an ASCII state machine) through a breadth-first search. Post-Mortem traces were processed in parallel using a callback-oriented trace reader and the final output was PDFs describing the parallel execution.</p>
+    
+    <p>My thesis began with the development of new analysis aimed at massively parallel applications. By relying on our trace format and parallel analyzer, we generated profiling reports (in PDF) for several production-grade applications. Nonetheless, when the number of files was approaching the number of nodes (4370 on Tera 100), we observed a severe performance penalty, encouraging us to rethink our instrumentation-analysis coupling. Indeed, file-system being a shared resource subject to contention, it is crucial to preserve it. Our bet was then not to use the file-system at all, preserving in the meantime the parallelism between instrumentation and analysis. Moreover, we were then able to dimension the analysis such as it maximizes the bisection bandwidth. Thanks to this mechanism, we instrumented applications at the scale of ten thousands of cores, manipulating data volumes in hundreds of Tera-Bytes. It shall be noted that this approach led to higher cumulative bandwidth than the file-system (98.5 GB/sec for 2560 analysis process). By dedicating cores to the on-line processing of performance events, we avoided the storage of temporary trace data, focusing only on the final result. These features were regrouped in the <a href="http://malp.hpcframework.com/">MALP tool-suite</a>.
+    </p>
+
+    <h2>PostDoc as Research Engineer</h2>
+
+    <p>After my thesis, I joined the Exascale Computing research laboratory to pursue the development of my tool.
+    My work consisted in the industrialization of MALP which had to move from the proof of concept to an integrated tool. We had to partially rewrite some features while integrating others. We also developed a new web interface in place of previous LaTex (or PDF) reports. The web approach allowed us to propose richer interactions with measurements (now stored in JSON) with for example 3D visualizations (WebGL with three.js). Moreover, in order to speed up analysis module development, MALP relied on its own template engine, gathering the HTML layout and both client and server side Javascript in the same source file (using Node.JS). Eventually, laboratory partnerships allowed us to test MALP over representative applications from aeronautics and chemistry in order to get a better understanding of user’s need, confirming some advantages of MALP over other tools.</p>
+
+    <h2>HPC Consultant</h2>
+
+    <p>I've been the first employee of the ParaTools SAS office in France, I've been in charge of fulfilling statements of work close to research subjects.
+
+    Below is a list of subjects I've dealt with, enriched with a short description: 
+    <ul>
+        <li>I started with developments in the MPC MPI runtime and integrated MPI-IO support by porting the ROMIO source code;</li>
+        <li>I reworked the datatype engine in the MPI runtime to provide support at the 3.1 level. In particular, I've extracted datatypes' footprints to factorize datatypes with ref-counting, indifferently from their generating function;</li>
+        <li>I then worked on the network part implementing configurable multi-rail in the runtime, configured through an XML file;</li>
+        <li>On compiler side, I worked on privatization and developed a compiler pass in gcc to support edge-cases in the privatization of variables (initialization chains), a process which enabled reliable compile-time transformation to run code in user-level threads;</li>
+        <li>I've implemented the full RDMA support inside the MPC runtime. It is based on a modular structure integrated into the multi-rail engine. It also includes, emulated calls on top of active messages and shared-memory (and same node) optimizations;</li>
+        <li>I've worked on collective operation algorithms in shared-memory context to be able to extract parallelism while maximizing local processing for collective operations. This work was extended to node-local collectives through shared-memory segments;</li>
+        <li>I've integrated container support in the pcocc orchestrator both inside pods (using a Go agent) and natively using rootless containers. To do so I relied on the OCI image format both exporting and importing in native Python.</li>
+    </ul>
+
+    This work was mainly targetted at updating the support for the MPI standard in the MPC MPI runtime.
+
+    Due to the small size of the company my responsibilities also included general operations, communication and some administrative tasks. The company hired two new collaborators and I've then been promoted to a position including a management role.
+    </p>
+
+    <h2>Manager and Technical Leader (Current)</h2>
+
+    <p>As the company grown with new hiring it was necessary to structure it slightly more hierarchically. My responsibilities then included the management and timely delivery of work for a small team. Meanwhile, administrative work and the writing, reporting, and conduct of research project also became one of my attributions. I've also pursued developments as a consultant. In particular, I've participated in the development of an orchestrator for virtual machines by developing a virtualization agent (in python, Go and GRPC). Followingly, I've implemented OCI container support in this hypervisor by deploying support for execution in both Pods and Rootless environments -- leveraging existing tools and runtimes. ParaTools also founded (with four other partners) a working group in the MPI Forum (home of the MPI standard) dealing with hardware topology. I've been in charge of participating to this group led by INRIA Bordeaux, and which goal is to produce valuable hardware abstractions to target next HPC architectures.
+    </p>
+
+
+
+
+
+<canvas id="md" width="auto"></canvas>
+
+<script src="mandel.js"></script>
+<script>
+var m = null
+var mandel_size = {}
+
+function set_mandel()
     {
         if(m!=null)
         {
@@ -373,9 +129,21 @@
 
     window.onresize = redraw
 
-    set_mandel()
+//set_mandel()
 
-    </script>
+</script>
 
+</main>
+
+<footer>
+<section>
+<p>&copy; 2019 Jean-Baptiste Besnard</p>
+<p>
+    <a href="https://www.linkedin.com/in/jbbesnard">Linked In</a>
+    <a href="https://github.com/besnardjb/">GitHub</a>
+</p>
+</section>
+</footer>
+
+</body>
 </html>
-
