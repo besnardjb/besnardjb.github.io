@@ -17,15 +17,20 @@ a:link, a:visited {
     text-decoration: none
 }
 
+
+.floatl {
+    float: left;
+    margin: 20px;
+}
+
 a:hover, a:active {
     color: #0000ff;
     text-decoration: underline
 }
 
-
 /* Single column layout */
 nav section, header section, main, footer section {
-    max-width: 40em;
+    max-width: 80em;
     margin-left: auto;
     margin-right: auto;
     padding: 0 0.5em;
