@@ -2,7 +2,18 @@ site:
 	./makesite.py
 
 serve: site
-	cd _site && python -m SimpleHTTPServer 2> /dev/null || python3 -m http.server
+	if python3 -c 'import http.server' 2> /dev/null; then \
+	    echo Running Python3 http.server ...; \
+	    python3 -m http.server; \
+	elif python -c 'import http.server' 2> /dev/null; then \
+	    echo Running Python http.server ...; \
+	    python -m http.server; \
+	elif python -c 'import SimpleHTTPServer' 2> /dev/null; then \
+	    echo Running Python SimpleHTTPServer ...; \
+	    python -m SimpleHTTPServer; \
+	else \
+	    echo Cannot find Python http.server or SimpleHTTPServer; \
+	fi
 
 venv2:
 	virtualenv ~/.venv/makesite
