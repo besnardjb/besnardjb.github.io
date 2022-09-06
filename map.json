@@ -1,0 +1,22 @@
+{
+        "About Me" : {
+                "Some History" : "/md/history.md",
+                "Github" : "https://github.com/besnardjb",
+                "LinkedIn" : "https://www.linkedin.com/in/jbbesnard"
+        },
+        "Resume" : {
+                "Positions / Education" : "/md/posstud.md",
+                "Skills" : "/md/skills.md",
+                "Publications" : "/md/pub.md",
+                "Services" : "/md/services.md",
+                "Download CV" : "/cv.pdf"
+        },
+        "Software Projects" : {
+                "MPI / MPC" : "/md/mpc.md",
+                "Profiling / Debugging" : "/md/profdeb.md",
+                "Containers / Virtualization" : "/md/cont.md"
+        },
+        "Contact" : {
+                "contact@jbbesnard.pro" : "mailto:contact@jbbesnard.pro"
+        }
+}
