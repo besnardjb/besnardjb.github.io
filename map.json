@@ -16,8 +16,9 @@
                 "Profiling / Debugging" : "/md/profdeb.md",
                 "Containers / Virtualization" : "/md/cont.md"
         },
-        "Hack" : {
-                "Mandelbrot" : "/mandel.html"
+        "Fun/Side Projects" : {
+                "Mandelbrot" : "/mandel.html",
+		"IMEON 3.6" : "/md/imeon.md"
         },
         "Contact" : {
                 "contact@jbbesnard.pro" : "mailto:contact@jbbesnard.pro"
