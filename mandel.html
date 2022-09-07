@@ -1,17 +1,20 @@
  <canvas id="md" width=0 height=0></canvas>
 
 
-<script src="mandel.js"></script>
-    <script>
-    var m = null
-    var mandel_size = {}
+<script>
+    var mandel_state;
+    var mandel_size;
 
     function set_mandel()
     {
-        if(m!=null)
+        if(mandel_state != undefined)
         {
-            m.terminate()
+            mandel_state.terminate();
         }
+
+        $.getScript("/mandel.js", function ()
+        {
+
 
         mandel_size = {
             width: window.innerWidth || document.body.clientWidth,
@@ -19,8 +22,10 @@
         }
 
         if (typeof(Worker) !== "undefined") {
-            m = new mandel("md", mandel_size.width,  mandel_size.height)
+            mandel_state = new mandel("md", mandel_size.width,  mandel_size.height)
         }
+
+        })
     }
 
     function redraw() {
