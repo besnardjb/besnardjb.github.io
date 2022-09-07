@@ -9,7 +9,7 @@
                 "Skills" : "/md/skills.md",
                 "Publications" : "/md/pub.md",
                 "Services" : "/md/services.md",
-                "Download CV" : "/cv.pdf"
+                "Download CV" : "/pdf/cv.pdf"
         },
         "Software Projects" : {
                 "MPI / MPC" : "/md/mpc.md",
