@@ -214,7 +214,14 @@ function setPageContent(txt, pageid)
                         dataType: "text",
                         url: pageid,
                         success: function(response){
-                                htmld = marked.parse(response)
+                                if( pageid.endsWith(".md") )
+                                {
+                                        htmld = marked.parse(response)
+                                }
+                                else
+                                {
+                                        htmld = response
+                                }
                                 _page_cache[pageid] = htmld
                                 dolog("INFO: '" + pageid + "' added to cache")
                                 $("#pageTitle").html(txt)
@@ -261,8 +268,8 @@ function loadLayout()
                         for( k in map[m])
                         {
                                 link = jQuery("<a>", {href : "#"}).html(k)
-                                // Only .md files are to be handled locally
-                                if( map[m][k].endsWith(".md") )
+                                // Only is it local ressource ?
+                                if( map[m][k].startsWith("/") )
                                 {
                                         link.attr("id", map[m][k])
                                 }

@@ -16,6 +16,9 @@
                 "Profiling / Debugging" : "/md/profdeb.md",
                 "Containers / Virtualization" : "/md/cont.md"
         },
+        "Hack" : {
+                "Mandelbrot" : "/mandel.html"
+        },
         "Contact" : {
                 "contact@jbbesnard.pro" : "mailto:contact@jbbesnard.pro"
         }

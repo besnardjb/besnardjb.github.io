@@ -1,0 +1,42 @@
+ <canvas id="md" width=0 height=0></canvas>
+
+
+<script src="mandel.js"></script>
+    <script>
+    var m = null
+    var mandel_size = {}
+
+    function set_mandel()
+    {
+        if(m!=null)
+        {
+            m.terminate()
+        }
+
+        mandel_size = {
+            width: window.innerWidth || document.body.clientWidth,
+            height: window.innerHeight || document.body.clientHeight
+        }
+
+        if (typeof(Worker) !== "undefined") {
+            m = new mandel("md", mandel_size.width,  mandel_size.height)
+        }
+    }
+
+    function redraw() {
+        var new_size = {
+            width: window.innerWidth || document.body.clientWidth,
+            height: window.innerHeight || document.body.clientHeight
+        }
+
+        if(mandel_size.width * 0.03 <= Math.abs(new_size.width - mandel_size.width))
+        {
+            set_mandel()
+        }
+    }
+
+    window.onresize = redraw
+
+    set_mandel()
+
+</script>
