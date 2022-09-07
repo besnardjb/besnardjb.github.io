@@ -269,7 +269,9 @@ function loadLayout()
                         {
                                 link = jQuery("<a>", {href : "#"}).html(k)
                                 // Only is it local ressource ?
-                                if( map[m][k].startsWith("/") )
+                                if( map[m][k].startsWith("/")
+                                // Is it a resource which can be rendered
+                                && (map[m][k].endsWith(".md") || map[m][k].endsWith(".html")))
                                 {
                                         link.attr("id", map[m][k])
                                 }
