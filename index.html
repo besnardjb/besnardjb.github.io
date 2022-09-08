@@ -67,6 +67,8 @@
         min-width: 160px;
         box-shadow: 16px 16px 2px 0px rgba(0,0,0);
         z-index: 1;
+        outline: 4px solid #afa8af;
+        border: 1px solid #000;
         }
 
         /* Links inside the dropdown */
@@ -183,14 +185,29 @@
 
         }
 
+
         </style>
 
 
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
 
         <script>
+        var md = window.markdownit({
+                html: true,
+                linkify: true,
+                typographer: true,
+                highlight: function (str, lang) {
+                if (lang && hljs.getLanguage(lang)) {
+                try {
+                        return hljs.highlight(str, { language: lang }).value;
+                } catch (__) {}
+                }
 
+                return ''; // use external default escaping
+                }})
         var _page_cache = {}
 
         function dolog(text)
@@ -225,7 +242,7 @@
                                 success: function(response){
                                         if( pageid.endsWith(".md") )
                                         {
-                                                htmld = marked.parse(response)
+                                                htmld = md.render(response)
                                         }
                                         else
                                         {

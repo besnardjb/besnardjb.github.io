@@ -1,7 +1,7 @@
 # IMEON Status Exporter
 
 This is a simple python tool to extract and expose the state of an [IMEON 3.6 Smart-Grid Inverter](https://www.ienergy-us.com/uploads/files/User-guide-IMEON-3.6-EN.pdf).
-The code works with the IMEON OS One internal API by quering some JSON endpoints after loging-in with default credentials.
+The code works with the IMEON OS One internal API by querying some JSON endpoints after loging-in with default credentials.
 
 The main use of this code is to create a prometheus exporter from the IMEON data.
 
