@@ -9,7 +9,7 @@ EuroMPI 2022: 27-
 
 Distributed software using MPI is now facing a complexity barrier. Indeed, given increasing intra-node parallelism, combined with the use of accelerator, programs’ states are becoming more intricate. A given code must cover several cases, generating work for multiple devices. Model mixing generally leads to increasingly large pro- grams and hinders performance portability. In this paper, we pose the question of software composition, trying to split jobs in multiple services. In doing so, we advocate it would be possible to depend on more suitable units while removing the need for extensive runtime stacking (MPI+X+Y). For this purpose, we discuss what MPI shall provide and what is currently available to enable such software com- position. After pinpointing (1) process discovery and (2) Remote Procedure Calls (RPCs) as facilitators in such infrastructure, we focus solely on the first aspect. We introduce an overlay-network providing whole-machine inter-job, discovery, and wiring at the level of the MPI runtime. MPI process Unique IDentifiers (UIDs) are then covered as a Unique Resource Locator (URL) leveraged as support for job interaction in MPI, enabling a more horizontal usage of the MPI interface. Eventually, we present performance results for large-scale wiring-up exchanges, demonstrating gains over PMIx in cross-job configurations.
 
-## [Exploring space‑time trade‑offin backtraces](/pdf/backtrace.pdf)
+## [Exploring space‑time trade‑off in backtraces](/pdf/backtrace.pdf)
 
 *Jean‑Baptiste Besnard, Julien Adam, Allen D Malony, Sameer Shende, Julien Jaeger, Patrick Carribault, and Marc Pérache.*
 
