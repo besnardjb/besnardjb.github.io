@@ -222,6 +222,7 @@
         {
                 if( $("#pageTitle").text() == txt)
                 {
+                        window.location.hash = pageid;
                         dolog("INFO: '" + pageid + "' is already loaded")
                         return
                 }
@@ -230,9 +231,9 @@
                 {
                         // Yes you are expected to read it all !
                         dolog("INFO: '" + pageid + "' loaded from cache")
+                        window.location.hash = pageid;
                         $("#pageTitle").html(txt)
-                        $(".pageContent").html(_page_cache[pageid])
-                }
+                        $(".pageContent").html(_page_cache[pageid])                }
                 else
                 {
                         $.ajax({
@@ -251,6 +252,7 @@
                                         _page_cache[pageid] = htmld
                                         dolog("INFO: '" + pageid + "' added to cache")
                                         $("#pageTitle").html(txt)
+                                        window.location.hash = pageid;
                                         $(".pageContent").html(htmld)
                                 },
                                 error: function()
@@ -279,13 +281,31 @@
         }
 
 
+        function path_exists(map, path)
+        {
+                for( m in map)
+                {
+                        for(k in map[m])
+                        {
+                                if(map[m][k] == path)
+                                {
+                                        return k
+                                }
+                        }
+                }
+
+                return null
+        }
+
         function loadLayout()
         {
+                var map = {}
+
                 $.ajax({
                 type: "GET",
                 url: './map.json',
                 success: function(response){
-                        var map = response
+                        map =response
                         for( m in map)
                         {
                                 newdd = jQuery('<div>', {class: 'dropdown'}).append('<button class="dropbtn">' + m + '</button>')
@@ -319,7 +339,21 @@
 
                         }
 
+                        if(window.location.hash )
+                        {
+                                path = window.location.hash.slice(1)
+                                title = path_exists(map, path)
+
+                                if(title)
+                                {
+                                        setPageContent(title, path )
+
+                                        return
+                                }
+                        }
+
                         setPageContent("Some History", "/md/history.md" )
+
                 }
                 });
         }
