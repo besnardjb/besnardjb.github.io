@@ -9,6 +9,17 @@ EuroMPI 2022: 27-
 
 Distributed software using MPI is now facing a complexity barrier. Indeed, given increasing intra-node parallelism, combined with the use of accelerator, programs’ states are becoming more intricate. A given code must cover several cases, generating work for multiple devices. Model mixing generally leads to increasingly large pro- grams and hinders performance portability. In this paper, we pose the question of software composition, trying to split jobs in multiple services. In doing so, we advocate it would be possible to depend on more suitable units while removing the need for extensive runtime stacking (MPI+X+Y). For this purpose, we discuss what MPI shall provide and what is currently available to enable such software com- position. After pinpointing (1) process discovery and (2) Remote Procedure Calls (RPCs) as facilitators in such infrastructure, we focus solely on the first aspect. We introduce an overlay-network providing whole-machine inter-job, discovery, and wiring at the level of the MPI runtime. MPI process Unique IDentifiers (UIDs) are then covered as a Unique Resource Locator (URL) leveraged as support for job interaction in MPI, enabling a more horizontal usage of the MPI interface. Eventually, we present performance results for large-scale wiring-up exchanges, demonstrating gains over PMIx in cross-job configurations.
 
+## [Exploring space‑time trade‑offin backtraces](/pdf/backtrace.pdf)
+
+*Jean‑Baptiste Besnard, Julien Adam, Allen D Malony, Sameer Shende, Julien Jaeger, Patrick Carribault, and Marc Pérache.*
+
+In Tools for High Performance Computing 2018/2019, pages 151–168. Springer, 2021.
+
+
+The backtrace is one of the most common operations done by profiling and debugging tools. It consists in determining the nesting of functions leading to the current execution state. Frameworks and standard libraries provide facilities enabling this operation, however, it generally incurs both computational and memory costs. Indeed, walking the stack up and then possibly resolving functions pointers (to function names) before storing them can lead to non-negligible costs. In this paper, we propose to explore a means of extracting optimized backtraces with an O(1) storage size by defining the notion of stack tags. We define a new data-structure that we called a hashed-trie used to encode stack traces at runtime through chained hashing. Our process called stack-tagging is implemented in a GCC plugin, enabling its use of C and C++ application. A library enabling the decoding of stack locators though both static and brute-force analysis is also presented. This work introduces a new manner of capturing execution state which greatly simplifies both extraction and storage which are important issues in parallel profiling.
+
+
+
 ## [Checkpoint/restart approaches for a thread-based MPI runtime](/pdf/checkpoint.pdf)
 
 *Julien Adam, Maxime Kermarquer, Jean-Baptiste Besnard, Leonardo Bautista-Gomez, Marc Pérache, Patrick Carribault, Julien Jaeger, Allen D. Malony, Sameer Shende*
@@ -108,7 +119,7 @@ EuroMPI 2015: 3:1-3:9
 In the race for Exascale, the advent of many-core processors will bring a shift in parallel computing architectures to systems of much higher concurrency, but with a relatively smaller memory per thread. This shift raises concerns for the adaptability of HPC software, for the current generation to the brave new world. In this paper, we study domain splitting on an increasing number of memory areas as an example problem where negative performance impact on computation could arise. We identify the specific parameters that drive scalability for this problem, and then model the halo-cell ratio on common mesh topologies to study the memory and communication implications. Such analysis argues for the use of shared-memory parallelism, such as with OpenMP, to address the performance problems that could occur. In contrast, we propose an original solution based entirely on MPI programming semantics, while providing the performance advantages of hybrid parallel programming. Our solution transparently replaces halo-cells transfers with pointer exchanges when MPI tasks are running on the same node, effectively removing memory copies. The results we present demonstrate gains in terms of memory and computation time on Xeon Phi (compared to OpenMP-only and MPI-only) using a representative domain decomposition benchmark.
 
 
-## [Profiling and debugging by efficient tracing of hybrid multi-threaded HPC applications](/pdf/THESE.pdf)
+## [Profiling and debugging by efficient tracing of hybrid multi-threaded HPC applications](/pdf/THESE.pdf)
 
 *Jean-Baptiste Besnard*
 
