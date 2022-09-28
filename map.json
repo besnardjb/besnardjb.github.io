@@ -19,7 +19,8 @@
         "Fun/Side Projects" : {
                 "Mandelbrot" : "/mandel.html",
 		"IMEON 3.6" : "/md/proj/imeon.md",
-		"TalkSpirit Proxy": "/md/proj/talkspirit.md"
+		"TalkSpirit Proxy": "/md/proj/talkspirit.md",
+		"Second Brain Helper" : "/md/proj/sb.md"
         },
         "Contact" : {
                 "contact@jbbesnard.pro" : "mailto:contact@jbbesnard.pro"
