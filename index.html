@@ -217,12 +217,24 @@
                 log.scrollTop(log[0].scrollHeight);
         }
 
+        function setstate(pageid, back=false)
+        {
+                if(back)
+                {
+                        window.history.replaceState(null, null, "#" + pageid);
+                }
+                else
+                {
+                        window.history.pushState(null, null, "#" + pageid);
+                }
+        }
 
-        function setPageContent(txt, pageid)
+
+        function setPageContent(txt, pageid, back=false)
         {
                 if( $("#pageTitle").text() == txt)
                 {
-                        window.location.hash = pageid;
+                        setstate(pageid, back)
                         dolog("INFO: '" + pageid + "' is already loaded")
                         return
                 }
@@ -231,7 +243,7 @@
                 {
                         // Yes you are expected to read it all !
                         dolog("INFO: '" + pageid + "' loaded from cache")
-                        window.location.hash = pageid;
+                        setstate(pageid, back)
                         $("#pageTitle").html(txt)
                         $(".pageContent").html(_page_cache[pageid])                }
                 else
@@ -252,7 +264,7 @@
                                         _page_cache[pageid] = htmld
                                         dolog("INFO: '" + pageid + "' added to cache")
                                         $("#pageTitle").html(txt)
-                                        window.location.hash = pageid;
+                                        setstate(pageid, back)
                                         $(".pageContent").html(htmld)
                                 },
                                 error: function()
@@ -297,6 +309,25 @@
                 return null
         }
 
+        function setcontentfromhash(map, back=false)
+        {
+                loc = window.location.hash
+                if(loc)
+                {
+                        path = loc.slice(1)
+                        title = path_exists(map, path)
+
+                        if(title)
+                        {
+                                setPageContent(title, path, back )
+
+                                return true
+                        }
+                }
+
+                return false
+        }
+
         function loadLayout()
         {
                 var map = {}
@@ -313,7 +344,7 @@
 
                                 for( k in map[m])
                                 {
-                                        link = jQuery("<a>", {href : "#"}).html(k)
+                                        link = jQuery("<a>", {href : "javascript:void(0);"}).html(k)
                                         // Only is it local ressource ?
                                         if( map[m][k].startsWith("/")
                                         // Is it a resource which can be rendered
@@ -339,21 +370,18 @@
 
                         }
 
-                        if(window.location.hash )
-                        {
-                                path = window.location.hash.slice(1)
-                                title = path_exists(map, path)
-
-                                if(title)
+                        window.addEventListener('popstate', function (event) {
+                                if(!setcontentfromhash(map, true))
                                 {
-                                        setPageContent(title, path )
+                                        setPageContent("Some History", "/md/history.md" )
+                                }                        
+                        });
 
-                                        return
-                                }
+                        
+                        if(!setcontentfromhash(map))
+                        {
+                                setPageContent("Some History", "/md/history.md" )
                         }
-
-                        setPageContent("Some History", "/md/history.md" )
-
                 }
                 });
         }
