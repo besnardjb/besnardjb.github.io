@@ -23,7 +23,7 @@ My thesis began with the development of new analysis aimed at massively parallel
 After my thesis, I joined the Exascale Computing research laboratory to pursue the development of my tool.
 My work consisted in the industrialization of MALP which had to move from the proof of concept to an integrated tool. We had to partially rewrite some features while integrating others. We also developed a new web interface in place of previous LaTex (or PDF) reports. The web approach allowed us to propose richer interactions with measurements (now stored in JSON) with for example 3D visualizations (WebGL with three.js). Moreover, in order to speed up analysis module development, MALP relied on its own template engine, gathering the HTML layout and both client and server side Javascript in the same source file (using Node.JS). Eventually, laboratory partnerships allowed us to test MALP over representative applications from aeronautics and chemistry in order to get a better understanding of user’s need, confirming some advantages of MALP over other tools.
 
-HPC Consultant
+# HPC Consultant
 
 I've been the first employee of the ParaTools SAS office in France, I've been in charge of fulfilling statements of work close to research subjects.
 
