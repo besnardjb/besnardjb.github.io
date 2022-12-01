@@ -1,4 +1,4 @@
-# Services in Comittees
+# Services in Committees
 
 ## 2022
 
@@ -24,7 +24,7 @@
 
 - Reviewer, 1st International Workshop on Containers and New Orchestration Paradigms for Isolated Environments in HPC (CANOPIE HPC 19) SC19 Workshop
 - Reviewer, Workshop on Programming and Performance Visualization Tools (ProTools 19) SC19 Workshop
-- Reviewer, Workshop on Monitoring and Analysis for High Performance Computing Systems Plus  Applications 2017 (HPCMaspa 2019) Workshop
+- Reviewer, Workshop on Monitoring and Analysis for High Performance Computing Systems Plus  Applications 2019 (HPCMaspa 2019) Workshop
 - Reviewer (Performance Modeling and Evaluation track), 18th IEEE/ACM International Conference on  Cluster, Cloud, and Grid Computing (CCGrid 2019) Conference
 
 ## 2018
