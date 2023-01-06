@@ -57,6 +57,8 @@ Sample daily template with tasks:
 
 ```
 
+In addition tasks are automatically grouped by hashtags "#WORK #URGENT" up to two levels to help tracking.
+
 ## Usage
 
 Show daily note:
