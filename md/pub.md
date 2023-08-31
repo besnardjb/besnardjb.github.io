@@ -1,5 +1,43 @@
 # Publications
 
+## [Generating and Scaling a Multi-Language Test-Suite for MPI](/pdf/pcvs23.pdf)
+
+*Julien Adam, Jean-Baptiste Besnard, Paul Canat, Sameer Shende, Hugo Taboada, Adrien Roussel, Marc Pérache, Julien Jaeger*
+
+High-Performance Computing (HPC) is currently facing significant challenges. The hardware pressure has become increasingly difficult to manage due to the lack of parallel abstractions in applications. As a result, parallel programs must undergo drastic evolution to effectively exploit underlying hardware parallelism. Failure to do so results in inefficient code. In this pressing environment, parallel runtimes play a critical role, and their testing becomes crucial. This paper focuses on the MPI interface and leverages the MPI binding tools to develop a multi-language test-suite for MPI. By doing so and building on previous work from the Forum’s document editors, we implement a systematic testing of MPI symbols in the context of the Parallel Computing Validation System (PCVS), which is an HPC validation platform dedicated to running and managing test-suites at scale. We first describe PCVS, then outline the process of generating the MPI API test suite, and finally, run these tests at scale. All data sets, code generators, and implementations are made available in open-source to the community. We also set up a dedicated website showcasing the results, which self-updates thanks to the Spack package manager.
+
+## [Adaptive multi-tier intelligent data manager for Exascale](/pdf/admire.pdf)
+
+*Jesús Carretero, Javier García-Blas, Marco Aldinucci, Jean-Baptiste Besnard, Jean-Thomas Acquaviva, André Brinkmann, Marc-André Vef, Emmanuel Jeannot, Alberto Miranda, Ramon Nou, Morris Riedel, Massimo Torquati, Felix Wolf*
+
+The main objective of the ADMIRE project1 is the creation of an active I/O stack that dynamically adjusts computation and storage requirements through intelligent global coordination, the elasticity of computation and I/O, and the scheduling of storage resources along all levels of the storage hierarchy, while offering quality-of-service (QoS), energy efficiency, and resilience for accessing extremely large data sets in very heterogeneous computing and storage environments. We have developed a framework prototype that is able to dynamically adjust computation and storage requirements through intelligent global coordination, separated control, and data paths, the malleability of computation and I/O, the scheduling of storage resources along all levels of the storage hierarchy, and scalable monitoring techniques. The leading idea in ADMIRE is to co-design applications with ad-hoc storage systems that can be deployed with the application and adapt their computing and I/O behaviour on runtime, using malleability techniques, to increase the performance of applications and the throughput of the applications.
+
+## [Towards Achieving Transparent Malleability Thanks to MPI Process Virtualization](/pdf/transparent.pdf)
+
+*Hugo Taboada, Romain Pereira, Julien Jaeger, Jean-Baptiste Besnard*
+
+International Conference on High Performance Computing (ISC 23) -- HPCMALL
+
+The field of High-Performance Computing is rapidly evolving, driven by the race for computing power and the emergence of new architectures. Despite these changes, the process of launching programs has remained largely unchanged, even with the rise of hybridization and accelerators. However, there is a need to express more complex deployments for parallel applications to enable more efficient use of these machines. In this paper, we propose a transparent way to express malleability within MPI applications. This process relies on MPI process virtualization, facilitated by a dedicated privatizing compiler and a user-level scheduler. With this framework, using the MPC thread-based MPI context, we demonstrate how code can mold its resources without any software changes, opening the door to transparent MPI malleability. After detailing the implementation and associated interface, we present performance results on representative applications.
+
+## [Towards Smarter Schedulers: Molding Jobs into the Right Shape via Monitoring and Modeling](/pdf/smarter.pdf)
+
+*Jean-Baptiste Besnard, Ahmad Tarraf, Clément Barthélemy, Alberto Cascajo, Emmanuel Jeannot, Sameer Shende, Felix Wolf*
+
+International Conference on High Performance Computing (ISC 23) -- HPCMALL
+
+High-performance computing is not only a race towards the
+fastest supercomputers but also the science of using such massive machines productively to acquire valuable results – outlining the importance of performance modelling and optimization. However, it appears that more than punctual optimization is required for current architectures, with users having to choose between multiple intertwined parallelism possibilities, dedicated accelerators, and I/O solutions. Witnessing this challenging context, our paper establishes an automatic feedback loop between how applications run and how they are launched, with a specific focus on I/O. One goal is to optimize how applications are launched through moldability (launch-time malleability). As a first step in this direction, we propose a new, always-on measurement infrastructure based on state-of-the-art cloud technologies adapted for HPC. In this paper, we present the measurement infrastructure and associated design choices. Moreover, we leverage an existing performance modelling tool to generate I/O performance models. We outline sample modelling capabilities, as derived from our measurement chain showing the critical importance of the measurement in future HPC systems, especially concerning resource configurations. Thanks to this precise performance model infrastructure, we can improve moldability and malleability on HPC systems.
+
+## [MPI Application Binary Interface Standardization](/pdf/abi.pdf)
+
+*Jeff R. Hammond, Lisandro Dalcin, Erik Schnetter, Marc Pérache, Jean-Baptiste Besnard, Jed Brown, Gonzalo Brito Gadeschi, Joseph Schuchart, Simon Byrne, Hui Zhou*
+
+EuroMPI 2023
+
+MPI is the most widely used interface for high-performance computing (HPC) workloads. Its success lies in its embrace of libraries and ability to evolve while maintaining backward compatibility for older codes, enabling them to run on new architectures for many years. In this paper, we propose a new level of MPI compatibility: a standard Application Binary Interface (ABI). We review the history of MPI implementation ABIs, identify the constraints from the MPI standard and ISO C, and summarize recent efforts to develop a standard ABI for MPI. We provide the current proposal from the MPI Forum's ABI working group, which has been prototyped both within MPICH and as an independent abstraction layer called Mukautuva. We also list several use cases that would benefit from the definition of an ABI while outlining the remaining constraints.
+
+
 ## [Enabling Global MPI Process Addressing in MPI Applications](/pdf/euro22.pdf)
 
 *Jean-Baptiste Besnard, Allen D. Malony, Sameer Shende,  Julien Jaeger, Marc Pérache*
