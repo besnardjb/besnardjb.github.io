@@ -9,6 +9,7 @@
 - Reviewer, HPC Bug Fest 2023, SC 23 Workshop 
 - Reviewer, ProTools 2023: Workshop on Programming and Performance Visualization Tools, SC 23 Workshop
 - Reviewer, Future Generation Computer Systems 2023 Journal
+- Poster-Chair, EuroMPI 2023
 - Co-Chair, Performance Measurement, Modeling, and Tools track, The International Conference for High Performance Computing, Networking, Storage, and Analysis, SC 2023 Conference
 - Reviewer, Performance Track Committee, ICPP 2023, The International Conference on Parallel Processing
 - Reviewer, HPCMALL 2023 : 2nd International Workshop on Malleability Techniques Applications in High-Performance Computing
