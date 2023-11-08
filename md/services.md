@@ -3,10 +3,12 @@
 ## 2024
 
 - Reviewer, Programming, Compilers and Performance, Euro-Par 2024
+- Reviewer, System Software and Cloud Computing, SC 2024 Conference
+- Co-Chair, Tech Paper Track: Performance, ICCP 2024
 
 ## 2023
 
-- Reviewer, HPC Bug Fest 2023, SC 23 Workshop 
+- Reviewer, HPC Bug Fest 2023, SC 23 Workshop
 - Reviewer, ProTools 2023: Workshop on Programming and Performance Visualization Tools, SC 23 Workshop
 - Reviewer, Future Generation Computer Systems 2023 Journal
 - Poster-Chair, EuroMPI 2023
