@@ -1,5 +1,12 @@
 # Publications
 
+## [Malleability in Modern HPC Systems: Current Experiences, Challenges, and Future Opportunities](/pdf/mal.pdf)
+
+*A. Tarraf and M. Schreiber and A. Cascajo and J. Besnard and M. Vef and D. Huber and S. Happ and A. Brinkmann and D. E. Singh and H. Hoppe and A. Miranda and A. J. Pena and R. Machado and M. Gasulla and M. Schulz and P. Carpenter and S. Pickartz and T. Rotaru and S. Iserte and V. Lopez and J. Ejarque and H. Sirwani and F. Wolf*
+
+With the increase of complex scientific simulations driven by workflows and heterogeneous workload profiles, managing system resources effectively is essential for improving performance and system throughput, especially due to trends like heterogeneous HPC and deeply integrated systems with on-chip accelerators. For optimal resource utilization, dynamic resource allocation can improve productivity across all system and application levels, by adapting the applications' configurations to the system's resources. In this context, malleable jobs, which can change resources at runtime, can increase the system throughput and resource utilization while bringing various advantages for HPC users (e.g., shorter waiting time). Malleability has received much attention recently, even though it has been an active research area for almost two decades. This paper presents the state-of-the-art of malleable implementations in HPC systems, targeting mainly malleability in compute and I/O resources. Based on our experiences, we state our current concerns and list future opportunities for research.
+
+
 ## [Generating and Scaling a Multi-Language Test-Suite for MPI](/pdf/pcvs23.pdf)
 
 *Julien Adam, Jean-Baptiste Besnard, Paul Canat, Sameer Shende, Hugo Taboada, Adrien Roussel, Marc Pérache, Julien Jaeger*

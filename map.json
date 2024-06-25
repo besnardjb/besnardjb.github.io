@@ -12,6 +12,7 @@
                 "Download CV" : "/pdf/cv.pdf"
         },
         "Software Projects" : {
+                "ADMIRE" : "/md/admire.md",
                 "MPI / MPC" : "/md/mpc.md",
                 "Profiling / Debugging" : "/md/profdeb.md",
                 "Containers / Virtualization" : "/md/cont.md"

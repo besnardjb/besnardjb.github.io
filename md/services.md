@@ -2,6 +2,7 @@
 
 ## 2024
 
+- Reviewer, DynResHPC: 3rd EuroHPC Workshop on Dynamic Resources in HPC, Euro-Par Workshops, 2024
 - Reviewer, Programming, Compilers and Performance, Euro-Par 2024
 - Reviewer, System Software and Cloud Computing, SC 2024 Conference
 - Co-Chair, Tech Paper Track: Performance, ICCP 2024
