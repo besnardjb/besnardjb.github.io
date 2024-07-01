@@ -1,5 +1,12 @@
 # Publications
 
+## [Towards a Scale Invariant Syntax for Dynamic Job-Level Workflows](/pdf/tscale.pdf)
+
+*Jean-Baptiste Besnard, Martin Schreiber, and Allen D. Malony*
+
+High-performance computing (HPC) is undergoing a significant transformation as workloads become increasingly complex. The proliferation of nested parallelism and collocated functionalities in scientific software has naturally increased software complexity, leading to challenges in expressing launch configurations in a portable manner. This paper proposes the concept of self-unfolding dynamic workflows, which aims to alleviate this bottleneck by defining a compact runtime and mapping syntax that enables compute locality and resource composition between multiple jobs. Our scale-agnostic syntax for resource composition allows for job expressivity and dynamic resource utilization, making it easier to deploy and dynamically manage resources for parallel applications. We present a prototype implementation of this syntax over Slurm and an online visualization tool, demonstrating the advantages of this approach in terms of job layout compactness and usability.
+
+
 ## [Malleability in Modern HPC Systems: Current Experiences, Challenges, and Future Opportunities](/pdf/mal.pdf)
 
 *A. Tarraf and M. Schreiber and A. Cascajo and J. Besnard and M. Vef and D. Huber and S. Happ and A. Brinkmann and D. E. Singh and H. Hoppe and A. Miranda and A. J. Pena and R. Machado and M. Gasulla and M. Schulz and P. Carpenter and S. Pickartz and T. Rotaru and S. Iserte and V. Lopez and J. Ejarque and H. Sirwani and F. Wolf*
