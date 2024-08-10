@@ -1,69 +1,82 @@
-Positions/Education
-===================
+**Professional Experience**
+=========================
 
-Manager and Technical Leader
-----------------------------
+### Manager and Technical Leader
+#### ParaTools SAS
+##### September 2016 - Present
 
-ParaTools SAS, Sept. 2016 - Present
+* Led teams of engineers and consultants on various HPC projects
+* Developed and implemented technical strategies to improve project delivery and client satisfaction
 
+### Expert in High-Performance Computing
+#### ParaTools SAS
+##### August 2014 - September 2016
 
-HPC Consultant
---------------
+* Provided expert-level consulting services on high-performance computing (HPC) solutions
+* Collaborated with clients to identify their needs and develop tailored solutions
+* Conducted research and analysis to stay up-to-date on the latest developments in HPC technology
 
-ParaTools SAS, Aug. 2014 - Sept. 2016
+### Research Engineer
+#### Exascale Computing Research (ECR)
+##### October 2013 - August 2014
 
-Research Engineer
------------------
+* Contributed to the development of novel algorithms and techniques for exascale computing
+* Worked with a team of researchers to design, implement, and test new HPC solutions
+* Published research papers on the outcomes of these efforts
 
-Exascale Computing Research (ECR), Oct. 2013 - Aug. 2014
+### Teaching Assistant
+#### ISTY, University of Versailles Saint-Quentin
+##### October 2013 - July 2014 (Engineering school, second year) - Processor architecture
 
-Teaching Assistant
-------------------
+* Assisted in the teaching of processor architecture to engineering students
+* Developed and delivered course materials, including lectures and lab exercises
+* Graded student assignments and exams
 
-ISTY, University of Versailles Saint-Quentin, Oct. 2013 - Jul. 2014
-Engineering school, second year.
-Processor architecture
+### Ph. D Thesis
+#### CEA
+##### October 2010 - September 2013
 
-Ph. D Thesis
-------------
+* Conducted original research on advanced compilation techniques for HPC applications
+* Developed a plugin for GCC to add profiling capabilities
+* Presented research findings at international conferences
 
-CEA, Oct. 2010 - Sept. 2013
+### Teaching Assistant
+#### University of Versailles Saint-Quentin
+##### October 2012 - July 2013 (Master 2: High-Performance Computing and Simulation (MIHPS))
 
-Teaching Assistant
-------------------
+* Assisted in the teaching of advanced compilation techniques, C programming, and UNIX environment to graduate students
+* Developed and delivered course materials, including lectures and lab exercises
 
-University of Versailles Saint-Quentin, Oct. 2012 - Jul. 2013
-Master 2: High-Performance Computing and Simulation (MIHPS).
+### Teaching Assistant
+#### University of Versailles Saint-Quentin
+##### October 2011 - July 2012 (Master 1: High-Performance Computing and Simulation (MIHPS))
 
--  Advanced compilation: addition of a profiling pass in GCC (plugin)
+* Assisted in the teaching of parallel optimization techniques (MPI+OpenMP), C programming, and UNIX environment to graduate students
+* Developed and delivered course materials, including lectures and lab exercises
 
+### Work-Study Program
+#### CEA
+##### October 2009 - September 2010
 
+* Gained experience working as a software engineer in an industry setting
+* Assisted in the development and testing of HPC applications
 
-Teaching Assistant
-------------------
+### Engineer in Training
+#### Achtech Innovation
+##### March 2009 - June 2009
 
+* Gained experience working as a junior software engineer
+* Developed skills in programming, testing, and debugging
 
-University of Versailles Saint-Quentin, Oct. 2011 - Jul. 2012
-Master 1: High-Performance Computing and Simulation (MIHPS)
-- C programming and UNIX environment
-- Parallel optimization techniques (MPI+OpenMP)
+### Engineering School
+#### ISEN Brest
+##### September 2007 - June 2010
 
-Work-Study Program
-------------------
+* Studied computer science and engineering
+* Gained experience with programming languages, including C, C++, and Java
 
-CEA, Oct. 2009 - Sept. 2010
+### Preparatory Mathematics Classes
+#### ISEN Brest
+##### September 2005 - June 2007
 
-Engineer in Training
---------------------
-
-Achtech Innovation, Mar. 2009 - Jun. 2009
-
-Engineering School
-------------------
-
-ISEN Brest, Sept. 2007 - Jun. 2010
-
-Preparatory Mathematics Classes
--------------------------------
-
-ISEN Brest, Sept. 2005 - Jun. 2007
+* Prepared for a career in engineering by studying advanced mathematics concepts

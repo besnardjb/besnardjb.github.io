@@ -22,7 +22,8 @@
 		"IMEON 3.6" : "/md/proj/imeon.md",
 		"TalkSpirit Proxy": "/md/proj/talkspirit.md",
 		"Second Brain Helper" : "/md/proj/sb.md",
-		"Clippy LLAMA GUI" : "/md/proj/clippy.md"
+		"Clippyrs" : "/md/proj/clippy.md",
+		"Notifyd" : "/md/proj/notifyd.md"
         },
         "Contact" : {
                 "contact@jbbesnard.pro" : "mailto:contact@jbbesnard.pro"
