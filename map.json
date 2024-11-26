@@ -7,7 +7,7 @@
         "Resume" : {
                 "Positions / Education" : "/md/posstud.md",
                 "Skills" : "/md/skills.md",
-                "Publications" : "/md/pub.md",
+                "Talks / Publications" : "/md/pub.md",
                 "Services" : "/md/services.md",
                 "Download CV" : "/pdf/cv.pdf"
         },

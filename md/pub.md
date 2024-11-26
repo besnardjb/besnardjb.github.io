@@ -1,3 +1,13 @@
+# Talks
+
+## [Challenges and Opportunities for Tools in a Changing HPC Landscape](/pdf/challenges.pdf)
+
+[ProTools 2024](https://sc-protools-workshop.github.io/protools24/)
+
+*Jean-Baptiste Besnard*
+
+HPC is undergoing profound changes as AI workloads reshape hardware architectures, directly impacting software development. This shift has led to increased diversity in software stacks, with higher-level languages and new parallel programming interfaces emerging. In this evolving landscape, we aim to highlight the critical role of tools in addressing these shifting demands. Our discussion will start by examining the nature of current HPC tools and then explore how modern software stacks are promoting tools to first-class citizens within their ecosystems. Specifically, we will discuss shifts in runtimes, the motivations behind the MPI ABI for Tools, and the growing importance of Python and Rust leading to ‘Interfaces’ between languages and components. We will also emphasize the associated challenges in monitoring these increasingly complex systems. We argue that now, more than ever, robust tools are essential for enabling end-users to efficiently harness the capabilities of a given hardware platform.
+
 # Publications
 
 ## [Towards a Scale Invariant Syntax for Dynamic Job-Level Workflows](/pdf/tscale.pdf)
