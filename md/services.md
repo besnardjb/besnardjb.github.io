@@ -10,7 +10,7 @@
 
 - Reviewer: HIPC 2025, Poster Track, The 32nd IEEE International Conference on High Performance Computing
 - Reviewer: HIPC 2025, System Software Track, The 32nd IEEE International Conference on High Performance Computing
-- Reviewer: SCI 2025, Performance Track Supercomputing India 2025 (SCI2025) is India's inaugural HPC
+- Reviewer: SCI 2025, Performance Track, Supercomputing India 2025 (SCI2025) is India's inaugural HPC
 - Reviewer: ICPP 2025, System Sofware Stack Track, The International Conference on Parallel Processing
 - Reviewer, Euro-Par 2025, Programming, Compilers and Performance, the 31th International European Conference on Parallel  and Distributed Computing
 - Reviewer, DynResHPC: 4th EuroHPC Workshop on Dynamic Resources in HPC, Euro-Par Workshops, 2025
