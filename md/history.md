@@ -20,10 +20,16 @@ I've been working extensively in the field of High-Performance Computing, specia
 
 In industry settings, I've been a part of various projects as a consultant or developer. My work includes implementing virtual machine orchestrators, containers, working on MPI implementations on a wide range of aspects. As the company grew, my responsibilities expanded to include management roles, communication, and research project coordination.
 
-**Current Role**
-
-As Technical Leader and Manager, I oversee the development of projects within our team, ensuring timely delivery and effective collaboration among team members. My expertise in parallel systems, runtime, and profiling continues to play a significant role in driving innovation and optimization in HPC environments.
 
 **MPI Forum Working Group**
 
-I'm also actively involved with the MPI Forum working group as part of the INRIA Bordeaux-led effort to produce valuable hardware abstractions targeting next-generation HPC architectures. As one of the founding members, I contribute to this initiative by providing insights from my experiences and research findings.
+I also used to be actively involved with the MPI Forum working on hardware topologies, and also tooling. Followed the standard evolutions for a decade. Participated in the tools and packaging part of the ABI paper for MPI 4.1.
+
+
+**Technical Leader and Manager**
+
+As Technical Leader and Manager, I followed the development of projects within our team, ensuring timely delivery and effective collaboration among team members. My expertise in parallel systems, runtime, and profiling continues to played a significant role in driving innovation and optimization in HPC environments for our customers.
+
+**Lead Software Engineer**
+
+I joined DDN in 2025 as a Lead Software Engineer. My role in the Infinia software defined storage team is to implement innovative solutions spanning a large spectrum of topics from Networking to Monitoring.

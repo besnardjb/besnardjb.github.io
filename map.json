@@ -1,31 +1,33 @@
 {
-        "About Me" : {
-                "Some History" : "/md/history.md",
-                "Github" : "https://github.com/besnardjb",
-                "LinkedIn" : "https://www.linkedin.com/in/jbbesnard"
-        },
-        "Resume" : {
-                "Positions / Education" : "/md/posstud.md",
-                "Skills" : "/md/skills.md",
-                "Talks / Publications" : "/md/pub.md",
-                "Services" : "/md/services.md",
-                "Download CV" : "/pdf/cv.pdf"
-        },
-        "Software Projects" : {
-                "ADMIRE" : "/md/admire.md",
-                "MPI / MPC" : "/md/mpc.md",
-                "Profiling / Debugging" : "/md/profdeb.md",
-                "Containers / Virtualization" : "/md/cont.md"
-        },
-        "Fun/Side Projects" : {
-                "Mandelbrot" : "/mandel.html",
-		"IMEON 3.6" : "/md/proj/imeon.md",
-		"TalkSpirit Proxy": "/md/proj/talkspirit.md",
-		"Second Brain Helper" : "/md/proj/sb.md",
-		"Clippyrs" : "/md/proj/clippy.md",
-		"Notifyd" : "/md/proj/notifyd.md"
-        },
-        "Contact" : {
-                "contact@jbbesnard.pro" : "mailto:contact@jbbesnard.pro"
-        }
+  "About Me": {
+    "Some History": "/md/history.md",
+    "Github": "https://github.com/besnardjb",
+    "LinkedIn": "https://www.linkedin.com/in/jbbesnard"
+  },
+  "Resume": {
+    "Positions / Education": "/md/posstud.md",
+    "Skills": "/md/skills.md",
+    "Talks / Publications": "/md/pub.md",
+    "Services": "/md/services.md",
+    "Download CV": "/pdf/cv.pdf"
+  },
+  "Software Projects": {
+    "DDN Infinia": "/md/infinia.md",
+    "ADMIRE": "/md/admire.md",
+    "MPI / MPC": "/md/mpc.md",
+    "Profiling / Debugging": "/md/profdeb.md",
+    "Containers / Virtualization": "/md/cont.md"
+  },
+  "Fun/Side Projects": {
+    "Mandelbrot": "/mandel.html",
+    "Snapped Debugger": "/md/proj/snapped.md",
+    "IMEON 3.6": "/md/proj/imeon.md",
+    "TalkSpirit Proxy": "/md/proj/talkspirit.md",
+    "Second Brain Helper": "/md/proj/sb.md",
+    "Clippyrs": "/md/proj/clippy.md",
+    "Notifyd": "/md/proj/notifyd.md"
+  },
+  "Contact": {
+    "contact@jbbesnard.pro": "mailto:contact@jbbesnard.pro"
+  }
 }

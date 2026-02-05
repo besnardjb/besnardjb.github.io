@@ -2,7 +2,11 @@
 
 ## Technical Skills
 
+- Rust programming
 - System programming in C
+- Performance monitoring and observability:
+  - Involved in academia for several years on this topic (been SC chair of performance track)
+  - Implemented multiple bridges and data-aggregation layers for real-time monitoring
 - Shared-memory parallelism in C (Pthread, OpenMP)
 - Parallel Network programming (Infiniband)
 - RDMA network programming (Infiniband)

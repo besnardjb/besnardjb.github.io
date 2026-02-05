@@ -1,9 +1,17 @@
 **Professional Experience**
 =========================
 
+### Lead Software Engineer
+#### DDN
+##### January 2025 - Present
+
+* Participate in the development of innovative solutions for software-defined storage
+* Implement solutions spanning a large spectrum of topics from Networking to Monitoring
+* Work on observability brigding with Victoria Metrics
+
 ### Manager and Technical Leader
 #### ParaTools SAS
-##### September 2016 - Present
+##### September 2016 - December 2024
 
 * Led teams of engineers and consultants on various HPC projects
 * Developed and implemented technical strategies to improve project delivery and client satisfaction

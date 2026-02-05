@@ -1,5 +1,20 @@
 # Services in Committees
 
+## 2026
+
+- Reviewer, SC 26, Performance Measurement, Modeling, and Tools, The International Conference for High Performance Computing, Networking, Storage, and Analysis
+- Reviewer, Euro-Par 2026, Programming, Compilers and Performance
+- Reviewer, COMPAS 2026, Parallelism Track, Conférence francophone d'informatique en Parallélisme, Architecture et Système
+
+## 2025
+
+- Reviewer: HIPC 2025, Poster Track, The 32nd IEEE International Conference on High Performance Computing
+- Reviewer: HIPC 2025, System Software Track, The 32nd IEEE International Conference on High Performance Computing
+- Reviewer: SCI 2025, Performance Track Supercomputing India 2025 (SCI2025) is India's inaugural HPC
+- Reviewer: ICPP 2025, System Sofware Stack Track, The International Conference on Parallel Processing
+- Reviewer, Euro-Par 2025, Programming, Compilers and Performance, the 31th International European Conference on Parallel  and Distributed Computing
+- Reviewer, DynResHPC: 4th EuroHPC Workshop on Dynamic Resources in HPC, Euro-Par Workshops, 2025
+
 ## 2024
 
 - Reviewer, DynResHPC: 3rd EuroHPC Workshop on Dynamic Resources in HPC, Euro-Par Workshops, 2024
@@ -13,7 +28,7 @@
 - Reviewer, ProTools 2023: Workshop on Programming and Performance Visualization Tools, SC 23 Workshop
 - Reviewer, Future Generation Computer Systems 2023 Journal
 - Poster-Chair, EuroMPI 2023
-- Co-Chair, Performance Measurement, Modeling, and Tools track, The International Conference for High Performance Computing, Networking, Storage, and Analysis, SC 2023 Conference
+- Co-Chair, SC 2023, Performance Measurement, Modeling, and Tools track, The International Conference for High Performance Computing, Networking, Storage, and Analysis
 - Reviewer, Performance Track Committee, ICPP 2023, The International Conference on Parallel Processing
 - Reviewer, HPCMALL 2023 : 2nd International Workshop on Malleability Techniques Applications in High-Performance Computing
 - Reviewer, Architectures and Accelerators, EuroPar 2023, the 29th International European Conference on Parallel  and Distributed Computing
