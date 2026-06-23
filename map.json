@@ -20,6 +20,8 @@
   },
   "Fun/Side Projects": {
     "Mandelbrot": "/mandel.html",
+    "llama.cpp Exporter": "/md/proj/llamaex.md",
+    "Prometheus Gateway": "/md/proj/promgw.md",
     "Snapped Debugger": "/md/proj/snapped.md",
     "IMEON 3.6": "/md/proj/imeon.md",
     "TalkSpirit Proxy": "/md/proj/talkspirit.md",
