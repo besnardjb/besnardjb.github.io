@@ -27,6 +27,10 @@
     "Clippyrs": "/md/proj/clippy.md",
     "Notifyd": "/md/proj/notifyd.md"
   },
+  "Dashboards": {
+    "Solar Panel": "/solar.html",
+    "llama.cpp": "/llama.html"
+  },
   "Contact": {
     "contact@jbbesnard.pro": "mailto:contact@jbbesnard.pro"
   }

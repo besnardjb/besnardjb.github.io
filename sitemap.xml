@@ -42,6 +42,16 @@
 </url>
 
 <url>
+  <loc>https://www.jbbesnard.pro/#/md/infinia.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro/#/md/admire.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
   <loc>https://www.jbbesnard.pro/#/md/mpc.md</loc>
   <changefreq>weekly</changefreq>
 </url>
@@ -62,7 +72,42 @@
 </url>
 
 <url>
-  <loc>https://www.jbbesnard.pro/#/md/imeon.md</loc>
+  <loc>https://www.jbbesnard.pro/#/md/proj/snapped.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro/#/md/proj/imeon.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro/#/md/proj/talkspirit.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro/#/md/proj/sb.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro/#/md/proj/clippy.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro/#/md/proj/notifyd.md</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro//solar.html</loc>
+  <changefreq>weekly</changefreq>
+</url>
+
+<url>
+  <loc>https://www.jbbesnard.pro//llama.html</loc>
   <changefreq>weekly</changefreq>
 </url>
 </urlset>
