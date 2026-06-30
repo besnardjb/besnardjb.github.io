@@ -203,32 +203,41 @@
             }, [document.createTextNode(formatTokens(Math.round(tv)))]));
         }
 
-        // X-axis labels — auto-scale based on time span
+        // X-axis labels — time-based step intervals
         var firstTs = pts[0].ts;
         var lastTs = pts[pts.length - 1].ts;
         var spanHours = (lastTs - firstTs) / 3600;
         var spanDays = spanHours / 24;
-        var labelInterval = Math.max(1, Math.floor(buckets.buckets.length / 10));
-        for (var i = 0; i < buckets.buckets.length; i += labelInterval) {
+        var xStep;
+        var labelFmt;
+        if (spanDays < 1) {
+            xStep = 3600;
+            labelFmt = function (d) { return pad(d.getHours(), 2) + ":" + pad(d.getMinutes(), 2); };
+        } else if (spanDays < 7) {
+            xStep = 3 * 3600;
+            labelFmt = function (d) { return pad(d.getHours(), 2) + ":00"; };
+        } else if (spanDays < 60) {
+            xStep = 12 * 3600;
+            labelFmt = function (d) { return pad(d.getMonth() + 1, 2) + "/" + pad(d.getDate(), 2); };
+        } else {
+            xStep = 7 * 24 * 3600;
+            labelFmt = function (d) { return pad(d.getMonth() + 1, 2) + "/" + pad(d.getDate(), 2); };
+        }
+
+        // Snap nextTick to the next aligned boundary
+        var nextTick = firstTs + xStep - ((firstTs % xStep) + xStep) % xStep;
+        for (var i = 0; i < buckets.buckets.length; i++) {
             var b = buckets.buckets[i];
-            var x = padLeft + i * barW + barW / 2;
-            var d = new Date(b.ts * 1000);
-            var label;
-            if (spanDays < 1) {
-                // Hours
-                label = pad(d.getHours(), 2) + ":" + pad(d.getMinutes(), 2);
-            } else if (spanDays < 30) {
-                // Daily with time
-                label = pad(d.getHours(), 2) + ":00";
-            } else {
-                // Monthly
-                label = pad(d.getMonth() + 1, 2) + "/" + pad(d.getDate(), 2);
+            if (b.ts >= nextTick) {
+                var d = new Date(b.ts * 1000);
+                var x = padLeft + i * barW + barW / 2;
+                svgEl.appendChild(el("text", {
+                    x: x, y: padTop + chartH + 14, fill: C.fg,
+                    "font-family": "monospace", "font-size": "9",
+                    "text-anchor": "middle"
+                }, [document.createTextNode(labelFmt(d))]));
+                nextTick += xStep;
             }
-            svgEl.appendChild(el("text", {
-                x: x, y: padTop + chartH + 14, fill: C.fg,
-                "font-family": "monospace", "font-size": "9",
-                "text-anchor": "middle"
-            }, [document.createTextNode(label)]));
         }
 
         // Draw bars

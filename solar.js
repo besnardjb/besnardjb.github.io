@@ -294,28 +294,26 @@
             }, [document.createTextNode(Math.round(tv))]));
         }
 
-        // X-axis labels
+        // X-axis labels — time-based step intervals
         var pts = stats.points;
         var firstTs = pts[0].ts;
         var lastTs = pts[pts.length - 1].ts;
         var spanHours = (lastTs - firstTs) / 3600;
+        var spanDays = spanHours / 24;
         var xStep;
-        var xLabelFormat;
-        if (spanHours <= 2) {
-            xStep = 30 * 60; // 30 min
-            xLabelFormat = function (d) {
-                return pad(d.getHours(), 2) + ":" + pad(d.getMinutes(), 2);
-            };
-        } else if (spanHours <= 12) {
-            xStep = 15 * 60; // 15 min
-            xLabelFormat = function (d) {
-                return pad(d.getHours(), 2) + ":" + pad(d.getMinutes(), 2);
-            };
+        var labelFmt;
+        if (spanDays < 1) {
+            xStep = 3600;
+            labelFmt = function (d) { return pad(d.getHours(), 2) + ":" + pad(d.getMinutes(), 2); };
+        } else if (spanDays < 7) {
+            xStep = 3 * 3600;
+            labelFmt = function (d) { return pad(d.getHours(), 2) + ":00"; };
+        } else if (spanDays < 60) {
+            xStep = 12 * 3600;
+            labelFmt = function (d) { return pad(d.getMonth() + 1, 2) + "/" + pad(d.getDate(), 2); };
         } else {
-            xStep = 3600; // 1 hour
-            xLabelFormat = function (d) {
-                return pad(d.getHours(), 2) + ":00";
-            };
+            xStep = 7 * 24 * 3600;
+            labelFmt = function (d) { return pad(d.getMonth() + 1, 2) + "/" + pad(d.getDate(), 2); };
         }
 
         // Draw bars
@@ -335,25 +333,20 @@
             }));
         }
 
-        // X-axis labels (thinned to fit)
-        var labelInterval = Math.max(1, Math.floor(buckets.buckets.length / 10));
-        for (var i = 0; i < buckets.buckets.length; i += labelInterval) {
+        // X-axis labels — time-based step intervals
+        var nextTick = firstTs + xStep - ((firstTs % xStep) + xStep) % xStep;
+        for (var i = 0; i < buckets.buckets.length; i++) {
             var b = buckets.buckets[i];
-            var x = padLeft + i * barW + barW / 2;
-            var d = new Date(b.ts * 1000);
-            var label;
-            if (spanHours <= 2) {
-                label = pad(d.getHours(), 2) + ":" + pad(d.getMinutes(), 2);
-            } else if (spanHours <= 12) {
-                label = pad(d.getHours(), 2) + ":" + pad(d.getMinutes(), 2);
-            } else {
-                label = pad(d.getHours(), 2) + ":00";
+            if (b.ts >= nextTick) {
+                var d = new Date(b.ts * 1000);
+                var x = padLeft + i * barW + barW / 2;
+                svg.appendChild(el("text", {
+                    x: x, y: padTop + chartH + 14, fill: C.fg,
+                    "font-family": "monospace", "font-size": "9",
+                    "text-anchor": "middle"
+                }, [document.createTextNode(labelFmt(d))]));
+                nextTick += xStep;
             }
-            svg.appendChild(el("text", {
-                x: x, y: padTop + chartH + 14, fill: C.fg,
-                "font-family": "monospace", "font-size": "9",
-                "text-anchor": "middle"
-            }, [document.createTextNode(label)]));
         }
 
         // Axes
